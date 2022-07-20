@@ -1,0 +1,63 @@
+.destaque {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background: var(--black);
+  color: var(--white);
+}
+
+.destaque-col1 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.destaque-col1 button {
+  background: var(--blue);
+  width: 80%;
+}
+
+.destaque-col1 button:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+.destaque-col2 {
+  color: var(--white);
+}
+
+.cards { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 100px 30px;
+  background: var(--white);
+}
+
+.card {
+  background: var(--black);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 30px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease-in-out;
+}
+
+.card img {
+  width: 300px;
+}
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+h6 {
+  color: var(--blue);
+}
